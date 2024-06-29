@@ -2,36 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./css/snackbar.css" />
+    <title>PROMISES</title>
   </head>
-  <body>
+  <body class="bg-body">
+    <div class="container">
+      <load ="partials/header.html" />
+      <form class="form">
+        <label>
+          Delay (ms)
+          <div class="counter">
+            <button class="counter-button minus" type="button">-</button>
+            <input
+              class="timer-input"
+              type="number"
+              name="delay"
+              min="0"
+              required
+            />
+            <button class="counter-button plus" type="button">+</button>
+          </div>
+        </label>
 
-    <form class="form">
-      <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
-      </label>
-    
-      <fieldset>
-        <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
-        </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
-    
-      <button type="submit">Create notification</button>
-    </form>
-    
-    <section>
-      <a href="./index.html">Go to home</a>
-    </section>
-    <script tapy="module" src="./js/2-snackbar.js"></script>
+        <fieldset class="fieldset">
+          <legend>State</legend>
+          <label class="label-radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="button-start" type="submit">Create notification</button>
+      </form>
+    </div>
+    <script type="module" src="./js/header.js"></script>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
